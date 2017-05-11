@@ -4,6 +4,13 @@ const config = require('../config');
 
 const app = express();
 
+app.use((req, res, next) => {
+  // Allow any sites to access this API
+  res.setHeader('Access-Control-Allow-Origin', '*');
+
+  next();
+});
+
 /**
  * Alias for /status
  */

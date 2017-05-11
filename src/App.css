@@ -11,14 +11,39 @@
   background-color: #222;
   height: 150px;
   padding: 20px;
-  color: white;
+  color: #fff;
+  margin-bottom: 2rem;
 }
 
-.App-intro {
-  font-size: large;
+.App-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (min-width: 600px) {
+  .App-content {
+    padding: 0;
+  }
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.grid {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.grid__item {
+  flex-basis: 100%;
+}
+
+@media (min-width: 600px) {
+  .grid__item {
+    flex-basis: 50%;
+  }
 }

@@ -29,5 +29,7 @@ and then press `a`.
 
 - Add SCSS pre-processor, see [adding-a-css-preprocessor-sass-less-etc](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc)
 - Consider ejecting the project and add webpack-sass-loader plugin
+- Consider ejecting the project and add support for CSS modules
+- Implement Redux
 - Add deploy script
 
