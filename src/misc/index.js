@@ -22,9 +22,7 @@ export const activateTweetLinks = (text, links) => {
  * Example from: `Thu May 11 00:28:26 +0000 2017` to `4 minutes ago`
  * @param {string} date - tweet date
  */
-export const formatTweetDate = (date) => {
-  return moment(date, 'ddd, MMM DD HH:mm:ss ZZ YYYY').fromNow()
-}
+export const formatTweetDate = date => moment(date, 'ddd, MMM DD HH:mm:ss ZZ YYYY').fromNow();
 
 /**
  * Miscellaneous helper functions.

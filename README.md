@@ -32,4 +32,5 @@ and then press `a`.
 - Consider ejecting the project and add support for CSS modules
 - Implement Redux
 - Add deploy script
+- Improve link replacer implementation
 
