@@ -1,0 +1,12 @@
+.tweet {
+  text-align: left;
+}
+
+.tweet__logo {
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.tweet__user {
+  font-size: 1.2rem;
+}
