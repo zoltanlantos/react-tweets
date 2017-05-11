@@ -20,11 +20,11 @@ app.get('/status', (req, res) => {
 });
 
 /**
- * Returns @cnnbrk tweets from the timeline
+ * Returns tweets from the timeline of :screen_name handle
  */
-app.get('/cnnbrk-tweets', (req, res) => {
+app.get('/:screenName-tweets', (req, res) => {
   tweets
-    .getUserTimeline('cnnbrk')
+    .getUserTimeline(req.params.screenName)
     .then(data => res.json(data))
     .catch(error => res.status(500).json(error));
 });

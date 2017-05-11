@@ -16,7 +16,7 @@ const tweets = {
    */
   getUserTimeline(screenName) {
     return new Promise((resolve, reject) => {
-      T.get('statuses/user_timeline', { screen_name: screenName }, (error, data) => {
+      T.get('statuses/user_timeline', { screen_name: screenName, count: 10 }, (error, data) => {
         if (error) {
           reject(error);
         } else {
